@@ -4,6 +4,7 @@ html{
 
 .body{
     background-color: rgb(20, 20, 20);
+    margin: 0%;
 }
 
 .Menu{
@@ -53,7 +54,7 @@ html{
     width: 100%;
     height: 600px;
     background: url("img/fondo-header.png");
-
+    background-attachment: fixed;
 }
 .Logo{
     padding-top: 100px;
@@ -93,6 +94,7 @@ html{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 10%;
+    
 }
 
 .container2{
