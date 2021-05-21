@@ -116,8 +116,8 @@ html{
 .imgBAF{
     transform-style: inherit;
     padding-left: -25px;
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 25%;
     float: left;
     display: block;
     border-radius: 5%;
