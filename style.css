@@ -221,13 +221,12 @@ html{
 }
 
 .imgBAF{
-    transform-style: inherit;
-    padding-left: -25px;
+    padding: 7vh 0vh;
     width: 15%;
     height: 15%;
     float: left;
     display: block;
-    border-radius: 5%;
+    border-radius: 50%;
 }
 
 .utnlogo{
@@ -248,7 +247,7 @@ html{
 }
 
 .cs{
-    block-size: 30vh;
+    block-size: 33vh;
     display: inline-block;
     border-radius: 100%;
     padding: 0px 30px;
@@ -307,10 +306,29 @@ html{
     block-size: 20vh;
     display: inline-block;
     border-radius: 0%;
-    padding: 0px 30px;
+    padding: 10vh 30px;
 }
 
+.html{
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 0%;
+    padding: 10vh 30px;
+}
 
+.css{
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 0%;
+    padding: 10vh 30px;
+}
+
+.js{
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 0%;
+    padding: 10vh 30px;
+}
 
 
 .ROTAHOST{
