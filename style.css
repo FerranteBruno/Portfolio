@@ -68,10 +68,6 @@ html{
 
 }
 
-.desarrollador{
-   
-}
-
 .Titulo{
     
     text-align: center;
@@ -157,6 +153,20 @@ html{
     
 }
 
+.containerTech{
+    text-align: center;
+    padding: 40px 80px;
+    background-color: #1E2749;
+    border: rgb(0, 0, 0);
+    background-attachment: fixed;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+
+    
+}
+
 .HeaderCont{
     
     text-align: center;
@@ -190,7 +200,7 @@ html{
 
 .h4cont{
     
-    text-align: left;
+    text-align: center;
     color: #E4D9FF;
     text-combine-upright:initial;
     padding-top: 25px;
@@ -203,6 +213,11 @@ html{
 .centradoADM{
     margin-left: -25px;
     margin-right: -25px;
+}
+
+.tech{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .imgBAF{
@@ -231,6 +246,72 @@ html{
     padding: 0px 0px;
     transition-delay: 0.5s;
 }
+
+.cs{
+    block-size: 30vh;
+    display: inline-block;
+    border-radius: 100%;
+    padding: 0px 30px;
+}
+
+.cpp{
+    height: 30%;
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0px 30px;
+}
+
+.net{
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0px 30px;
+}
+
+.unity{
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0px 30px;
+}
+
+.docker{
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 0%;
+    padding: 0px 0px;
+}
+.sql{
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 0%;
+    padding: 0px 30px;
+}
+
+.prox{
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 0%;
+    padding: 0px 30px;
+}
+
+.rancher{
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 0%;
+    padding: 0px 30px;
+}
+
+.vmware{
+    block-size: 20vh;
+    display: inline-block;
+    border-radius: 0%;
+    padding: 0px 30px;
+}
+
+
+
 
 .ROTAHOST{
     transform-style: inherit;
