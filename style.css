@@ -5,8 +5,26 @@ html{
 .body{
     margin: 0%;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,112,181,1) 44%, rgba(241,80,37,1) 100%);
+    background: linear-gradient(90deg, #30343F 0%, #273469 44%, #F15025 100%);
 }
+
+
+.Home{
+    
+    position: fixed;
+    float: left;
+    padding: 0vh 0px;
+    margin-left: -25%;
+    top: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color:azure;
+    text-decoration: none;
+    opacity: 0.75;
+    width: 15%;  
+}
+
+
 
 .Menu{
     
@@ -18,7 +36,7 @@ html{
     font-size: 25px;
     color:azure;
     text-decoration: none;
-    background-color:transparent;
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,112,181,1) 44%, rgba(241,80,37,1) 100%);
     opacity: 0.75;
     width: 100%;  
 }
@@ -38,11 +56,42 @@ html{
 .Menu a:hover {
     background: #ddd;
     color: rgb(51,51,51);
+    box-shadow: 0 0 2px 1px #F15025;
   }
 
 .Menu a::after{
     background: #ddd;
     color: rgb(0,0,0);
+}
+
+.ico{
+    border-radius: 30%;
+    background-color: #1E2749;
+    float: right;
+    cursor: pointer;
+    padding: 0.5vh 0.5vh;
+}
+
+.ico-link{
+    margin-bottom: 2%;
+}
+.ico-link :hover{
+    opacity: 0.65;
+}
+
+.ico-gh{
+    margin-bottom: 2%;
+}
+.ico-gh :hover{
+    opacity: 0.65;
+}
+
+.ico-rh{
+    margin-bottom: 2%;
+}
+
+.ico-rh :hover{
+    opacity: 0.65;
 }
 
 .Head{
@@ -53,18 +102,21 @@ html{
 
 .Head-Container{
     width: 100%;
-    height: 600px;
+    height: 100vh;
     background: url("img/fondo-header.png");
     background-attachment: fixed;
 }
 .Logo{
-    padding-top: 100px;
+    padding-top: 32.5vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: orangered;
-    width: 325px;
-    height: 325px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    height: 400px;
+    shape-rendering: geometricPrecision;
+    opacity: 1;
 
 }
 
@@ -184,7 +236,7 @@ html{
     text-combine-upright:initial;
     padding-left: -25px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
 } 
 
 .h3cont{
@@ -195,7 +247,7 @@ html{
     padding-top: -10px;
     padding-left: 200px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
 } 
 
 .h4cont{
@@ -206,7 +258,7 @@ html{
     padding-top: 25px;
     padding-left: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
+    font-size: 60px;
 } 
 
 
@@ -221,7 +273,7 @@ html{
 }
 
 .imgBAF{
-    padding: 7vh 0vh;
+    padding: 13vh 0vh;
     width: 15%;
     height: 15%;
     float: left;
@@ -229,21 +281,48 @@ html{
     border-radius: 50%;
 }
 
+@keyframes movement1 {
+    0% {left: -4px; top: 0px}
+    25% {left: 0px; top: 2px}
+    50% {left: 4px; top: 4px}
+    75% {left: 0px; top: 6px}
+    100% {left: -4px; top: 0px}
+  }
+
+  @keyframes movement2 {
+    0% {left: 4px; top: 0px}
+    25% {left: 0px; top: 2px}
+    50% {left: -4px; top: 4px}
+    75% {left: 0px; top: 6px}
+    100% {left: 4px; top: 0px}
+  }
+
+  @keyframes movement3 {
+    0% {left: -4px; top: -2px}
+    25% {left: 0px; top: 0px}
+    50% {left: -2px; top: 2px}
+    75% {left: 0px; top: 6px}
+    100% {left: -4px; top: 0px}
+  }
+
+  @keyframes movement4 {
+    0% {left: -4px; top: 0px}
+    25% {left: 0px; top: 2px}
+    50% {left: 4px; top: 4px}
+    75% {left: 0px; top: 6px}
+    100% {left: -4px; top: 0px}
+  }
+
 .utnlogo{
     width: 3%;
     height: 3%;
+    animation-name: movement1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
     display: inline-block;
     border-radius: 50%;
     padding: 0px 0px;
-}
-
-.utnlogo :hover{
-    width: 5%;
-    height: 5%;
-    display: inline-block;
-    border-radius: 5%;
-    padding: 0px 0px;
-    transition-delay: 0.5s;
 }
 
 .cs{
@@ -251,6 +330,10 @@ html{
     display: inline-block;
     border-radius: 100%;
     padding: 0px 30px;
+    animation-name: movement1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .cpp{
@@ -259,6 +342,10 @@ html{
     display: inline-block;
     border-radius: 50%;
     padding: 0px 30px;
+    animation-name: movement2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .net{
@@ -266,6 +353,10 @@ html{
     display: inline-block;
     border-radius: 50%;
     padding: 0px 30px;
+    animation-name: movement3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .unity{
@@ -273,6 +364,10 @@ html{
     display: inline-block;
     border-radius: 50%;
     padding: 0px 30px;
+    animation-name: movement4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .docker{
@@ -280,12 +375,20 @@ html{
     display: inline-block;
     border-radius: 0%;
     padding: 0px 0px;
+    animation-name: movement1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 .sql{
     block-size: 20vh;
     display: inline-block;
     border-radius: 0%;
     padding: 0px 30px;
+    animation-name: movement2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .prox{
@@ -293,6 +396,10 @@ html{
     display: inline-block;
     border-radius: 0%;
     padding: 0px 30px;
+    animation-name: movement3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .rancher{
@@ -300,6 +407,10 @@ html{
     display: inline-block;
     border-radius: 0%;
     padding: 0px 30px;
+    animation-name: movement4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .vmware{
@@ -307,6 +418,10 @@ html{
     display: inline-block;
     border-radius: 0%;
     padding: 10vh 30px;
+    animation-name: movement1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .html{
@@ -314,6 +429,10 @@ html{
     display: inline-block;
     border-radius: 0%;
     padding: 10vh 30px;
+    animation-name: movement2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .css{
@@ -321,6 +440,10 @@ html{
     display: inline-block;
     border-radius: 0%;
     padding: 10vh 30px;
+    animation-name: movement3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .js{
@@ -328,6 +451,10 @@ html{
     display: inline-block;
     border-radius: 0%;
     padding: 10vh 30px;
+    animation-name: movement4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 
@@ -346,12 +473,9 @@ html{
     text-align: center;
     padding: 40px 80px;
     background-color: #30343F;
-    border: rgb(0, 0, 0);
-    background-attachment: fixed;
+    background-attachment: relative;
     margin-top: 0%;
     margin-left: 0%;
     margin-right: 0%;
-    margin-bottom: 0%;
-
-    
+    margin-bottom: 0%;    
 }
