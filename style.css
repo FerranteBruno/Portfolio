@@ -5,7 +5,6 @@ html{
 .body{
     margin: 0%;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, #30343F 0%, #273469 44%, #F15025 100%);
 }
 
 
@@ -180,8 +179,6 @@ html{
 .container3{
     text-align: center;
     padding: 40px 80px;
-    background-color: royalblue;
-    border: rgb(0, 0, 0);
     background-image: url("img/223.jpg");
     background-size: 100%;
     background-attachment: fixed;
@@ -189,20 +186,6 @@ html{
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 0%;
-}
-
-.container4{
-    text-align: center;
-    padding: 40px 80px;
-    background-color: #1E2749;
-    border: rgb(0, 0, 0);
-    background-attachment: fixed;
-    margin-top: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 0%;
-
-    
 }
 
 .containerTech{
@@ -449,6 +432,21 @@ html{
     position: relative;
 }
 
+@keyframes movementRH {
+    0% {left: 0px; top: 0px}
+    7% {left: 10px; top: -10px}
+    14% {left: 20px; top: -20px}
+    21% {left: 30px; top: -30px}
+    28% {left: 20px; top: 0px}
+    35% {left: 10px; top: 10px}
+    42% {left: 0px; top: 20px}
+    49% {left: -10px; top: 30px}
+    56% {left: -20px; top: 0px}
+    63% {left: -30px; top: -10px}
+    70% {left: -20px; top: -20px}
+    77% {left: -10px; top: -10px}
+    100% {left: 00px; top: 0px}
+  }
 
 .ROTAHOST{
     width: 20%;
@@ -460,19 +458,64 @@ html{
     display: block;
 }
 
+.ROTAHOST :hover{ 
+    animation-name: movementRH;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
 .fondoc2{
     background-color: #F15025;
     opacity: 0.9;
     display:flow-root;
 }
 
-.footer{
+.container5{
     text-align: center;
     padding: 40px 80px;
+    background: linear-gradient(90deg, #30343F 0%, #273469 44%, #F15025 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container4{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 80px;
+    background-color: #1E2749;
+    background-attachment: fixed;
+    
+}
+
+.cp4{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div4{
+    block-size: 50px;
+    padding: 20vh 20vh;
+    background-color: #F15025;
+    text-align: center;
+}
+
+
+
+.CONTACT{
+    font-family: 'Roboto', sans-serif;
+    background: #614e75;
+}
+
+
+.footer{
+    padding-bottom: 10vh;
+    height: 100%;
     background-color: #30343F;
-    background-attachment: relative;
     margin-top: 0%;
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 0%;    
 }
+
+
