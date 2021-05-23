@@ -138,24 +138,30 @@
 </div>
 
 <div class="container5">
-<section class="CONTACT">
+<section class="CONTACT" id="CONTACT">
     <article> 
-        <h2>Interested? Get in contact!</h2>
+        <h1>Interested? Get in contact!</h1>
         <form action="" method="POST">
             <div class="TextC">
                 <label>Name</label>
-                <input type="text" name="name" placeholder="Name">
+                    <div class="TextBox">
+                        <input class="TextBox" style="text-align: center;" type="text" name="name" placeholder="Name">
+                    </div>
             </div>
             <div class="TextC">
                 <label>Email</label>
-                <input type="email" name="email" placeholder="Email">
+                    <div class="TextBox">
+                        <input class="TextBox" style="text-align: center;" type="email" name="email" placeholder="Email">
+                    </div>
             </div>
             <div class="TextC">
                 <label>Message</label>
-                <textarea name="message" placeholder="Message"></textarea>
+                    <div class="TextBox">
+                        <textarea class="TextBox" name="message" style="text-align: center;" type="message" placeholder="Message"></textarea>
+                    </div>
             </div>
-            <div class="Button">
-                <button type="submit">Send</button>
+            <div >
+                <button class="Button" type="submit">Send</button>
             </div>
         </form>
     </article>

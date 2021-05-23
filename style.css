@@ -472,7 +472,8 @@ html{
 .container5{
     text-align: center;
     padding: 40px 80px;
-    background: linear-gradient(90deg, #30343F 0%, #273469 44%, #F15025 100%);
+    /*background: linear-gradient(90deg, #30343F 0%, #273469 44%, #F15025 100%);*/
+    background-color: #273469;
     margin-left: auto;
     margin-right: auto;
 }
@@ -521,13 +522,32 @@ html{
 .CONTACT{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
+    font-size: 5vh;
+    padding-top: 3vh;
 }
 
 .TextC{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    padding-bottom: 1vh;
-    font-size: 3vh;
+    margin-top: 5vh;
+    font-size: 4vh;
+}
+
+.TextBox{
+    margin-top: 0.5vh;
+    padding-top: 6vh;
+    padding: 3vh 20vh;
+}
+
+.Button{
+    background-color: #F15025;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 
